@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["ajax_pay"])) {
         exit;
     }
 
-    $reference = "SP-" . time() . "-" . rand(1000, 9999);
+    $reference = "ELV-" . time() . "-" . rand(1000, 9999);
 
     $payload = [
         "api_key"   => $MEGAPAY_API_KEY,
